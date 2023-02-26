@@ -31,7 +31,7 @@ public class MainApp {
             System.out.println();
         }
 
-        System.out.println("ищем владельца bmw 5");
+        System.out.println("Ищем владельца bmw 5...");
         List<User> usersByCarModel = userService.getUsersByCarModel("bmw", 5);
         for (User user : usersByCarModel) {
             System.out.println("Id = " + user.getId());
