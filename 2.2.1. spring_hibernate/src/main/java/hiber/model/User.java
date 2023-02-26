@@ -20,8 +20,7 @@ public class User {
     private String email;
 
 
-    @OneToOne
-    @MapsId
+    @OneToOne (cascade = CascadeType.ALL)
     @JoinColumn(name = "id")
     private Car car;
 
@@ -41,6 +40,12 @@ public class User {
         this.lastName = lastName;
         this.email = email;
         this.car = car;
+    }
+
+    public User(String firstName, String lastName, String email) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.email = email;
     }
 
     public Long getId() {

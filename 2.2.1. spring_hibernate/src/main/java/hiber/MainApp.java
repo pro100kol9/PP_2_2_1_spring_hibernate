@@ -18,8 +18,8 @@ public class MainApp {
 
         userService.add(new User("Ivan", "Ivanov", "ivanovi@mail.ru", new Car("mazda", 3)));
         userService.add(new User("Petr", "Petrov", "petrovp@mail.ru", new Car("bmw", 5)));
-        userService.add(new User("Rodion", "Rodionov", "rodionovr@mail.ru", new Car("honda", 240)));
-        userService.add(new User("Sveta", "Svetikova", "svetikovas@mail.ru", new Car("nissan", 350)));
+        userService.add(new User("Rodion", "Rodionov", "rodionovr@mail.ru", new Car("nissan", 350)));
+        userService.add(new User("Sveta", "Svetikova", "svetikovas@mail.ru"));
 
         List<User> users = userService.listUsers();
         for (User user : users) {
